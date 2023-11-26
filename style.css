@@ -199,7 +199,7 @@ footer .information-box {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 15px;
     text-decoration: none;
-
+    color: var(--Dark-Grayish-Blue);
 }
 
 footer .social-media-box {
@@ -220,16 +220,20 @@ footer .social-media-box {
     section {
         padding: 60px 10px;
     }
+
     .access-sec img {
         width: 100%;
     }
+
     .client-sec .clients-container {
         width: 100%;
         justify-content: space-between;
     }
-    .clients-container  img{
+
+    .clients-container img {
         width: 15%;
     }
+
     footer .information-box {
         flex: 1;
         display: grid;
@@ -252,7 +256,7 @@ footer .social-media-box {
         font-size: 17px;
     }
 
-    
+
 
     .title {
         font-size: 26px;
