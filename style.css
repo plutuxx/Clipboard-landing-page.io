@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Border-Btn-Cyan: hsl(169.05deg 65.63% 37.65%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --border-Btn-Blue: hsl(233.28deg 63.21% 58.43%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --Footer-bg: hsl(201deg 11% 66% / 10%);
+}
+
+html,
+body {
+    width: auto;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+header h1 {
+    margin: 50px 0 17px 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+}
+
+header p {
+    max-width: 605px;
+    margin-bottom: 100px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+.download-box .ios-download-btn {
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 10px 7px;
+    padding: 12px 30px;
+    border-bottom: 3px solid var(--Border-Btn-Cyan);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 8px 18px -5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background-color: var(--Strong-Cyan);
+}
+
+.download-box .mac-download-btn {
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 10px 7px;
+    padding: 12px 30px;
+    border-bottom: 3px solid var(--border-Btn-Blue);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 8px 18px -5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background-color: var(--Light-Blue);
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.title {
+    margin-bottom: 17px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.small-title {
+    margin: 35px 0 14px 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.paragraph {
+    max-width: 605px;
+    margin-bottom: 50px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+.small-paragraph {
+    max-width: 280px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--Grayish-Blue);
+}
+
+.about-sec .main-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 50px;
+}
+
+.main-content .img-box {
+    width: 50%;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 105%;
+    transform: translateX(-5%);
+}
+
+.main-content .about {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.feauture-sec .main-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.main-content .feauture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.feauture img {
+    height: 32px;
+}
+
+.client-sec .clients-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding: 25px 10%;
+    background-color: var(--Footer-bg);
+}
+
+footer .logo {
+    width: 50px;
+
+}
+
+footer .information-box {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-gap: 15px 70px;
+    margin: 0 auto 0 100px;
+}
+
+.information-box a {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+footer .social-media-box {
+    display: flex;
+    align-items: center;
+}
+
+.social-media-box .icon {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.icon img {
+    width: 20px;
+}
+
+@media (width <=768px) {
+    section {
+        padding: 60px 10px;
+    }
+    .access-sec img {
+        width: 100%;
+    }
+    .client-sec .clients-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .clients-container  img{
+        width: 15%;
+    }
+    footer .information-box {
+        flex: 1;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 15px 70px;
+        margin: 0 auto 0 100px;
+    }
+}
+
+@media (width <=425px) {
+    header img {
+        width: 100px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    
+
+    .title {
+        font-size: 26px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+    .access-sec .main-content .img-box {
+        width: 100%;
+    }
+
+    .img-box img {
+        width: 100%;
+        transform: none;
+    }
+
+    .about-sec .main-content {
+        flex-direction: column;
+    }
+
+    .main-content .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .access-sec img {
+        width: 100%;
+    }
+
+    .feauture-sec .main-content {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content .feauture {
+        margin: 25px 0;
+    }
+
+    .client-sec .clients-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clients-container img {
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .download-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 40px 100px;
+
+    }
+
+    footer .information-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: none;
+        margin: 40px 0 0 0;
+    }
+
+    footer .social-media-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 40px 0 0 0;
+
+    }
+
+    .social-media-box .icon {
+        margin: 0 15px;
+    }
+}
